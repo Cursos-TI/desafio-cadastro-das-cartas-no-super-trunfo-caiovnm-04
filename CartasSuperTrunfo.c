@@ -2,6 +2,9 @@
 
 struct carta
 {
+    char estado;
+    char codigo[15];
+    char cidade[50];
     int população;
     float area;
     float PIB;
@@ -16,6 +19,15 @@ int main()
 
     // cadastrar carta-1
     printf(">>>> digite os dados da carta 1 <<<<\n");
+
+    printf("estado: \n");
+    scanf(" %c", &carta1.estado);
+
+    printf("codigo: \n");
+    scanf(" %14[^\n]", carta1.codigo);
+
+    printf("cidade: \n");
+    scanf(" %49[^\n]", carta1.cidade);
 
     printf("população: \n");
     scanf("%d", &carta1.população);
@@ -32,6 +44,15 @@ int main()
     // casdastrar carta-2
     printf(">>>> digite os dados da carta 2 <<<<\n");
 
+    printf("estado: \n");
+    scanf(" %c", &carta2.estado);
+
+    printf("codigo: \n");
+    scanf(" %14[^\n]", carta2.codigo);
+
+    printf("cidade: \n");
+    scanf(" %49[^\n]", carta2.cidade);
+
     printf("população: \n");
     scanf("%d", &carta2.população);
 
@@ -47,6 +68,9 @@ int main()
     // dados cadastrados da carta-1
     printf("\n==== dados da carta 01 ====\n");
 
+    printf("estado: %c\n", carta1.estado);
+    printf("codigo: %s\n", carta1.codigo);
+    printf("cidade: %s\n", carta1.cidade);
     printf("população: %d\n", carta1.população);
     printf("Área: %.2f\n", carta1.area);
     printf("PIB: %.2f\n", carta1.PIB);
@@ -55,6 +79,9 @@ int main()
     // dados cadastrados da carta-2
     printf("\n==== dados da carta 02 ====\n");
 
+    printf("estado: %c\n", carta2.estado);
+    printf("codigo: %s\n", carta2.codigo);
+    printf("cidade: %s\n", carta2.cidade);
     printf("população: %d\n", carta2.população);
     printf("Área: %.2f\n", carta2.area);
     printf("PIB: %.2f\n", carta2.PIB);
