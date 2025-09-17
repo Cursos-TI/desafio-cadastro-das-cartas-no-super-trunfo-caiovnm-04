@@ -17,10 +17,10 @@ struct carta
 int main()
 {
 
-    // * declaração das 2 cartas;
+    // declaração das 2 cartas;
     struct carta carta1, carta2;
 
-    // * cadastrar carta-1
+    // cadastrar carta-1
     printf(">>>> digite os dados da carta 1 <<<<\n");
 
     printf("estado: \n");
@@ -47,11 +47,11 @@ int main()
     carta1.densidade_popu = (float)carta1.população / carta1.area;
     carta1.PIB_percapita = carta1.PIB / (float)carta1.população;
 
-    // * calculo do Super poder carta 1
+    // calculo do Super poder carta 1
     carta1.super_poder = (float)carta1.população + carta1.area + carta1.PIB +
                          (float)carta1.pontos_turisticos + carta1.densidade_popu + carta1.PIB_percapita;
 
-    // * casdastrar carta-2
+    //  casdastrar carta-2
     printf(">>>> digite os dados da carta 2 <<<<\n");
 
     printf("estado: \n");
@@ -110,7 +110,7 @@ int main()
     printf("PIB per Capita: %.2f\n", carta2.PIB_percapita);
     printf("Super Poder : %.2f\n", carta2.super_poder);
 
-    // * comparação das cartas
+    // comparação das cartas
     printf("\n==== comparação de poder entre as duas cartas ====\n");
 
     printf("População: %s (%d)\n", carta1.população > carta2.população ? "carta 1 venceu" : "carta 2 venceu",
@@ -125,7 +125,7 @@ int main()
     printf("pontos turisticos: %s (%d)\n", carta1.pontos_turisticos > carta2.pontos_turisticos ?
          "carta 1 venceu" : "carta 2 venceu", carta1.pontos_turisticos > carta2.pontos_turisticos ? 1 : 0);
 
-    // ! quem tem a menor densidade populcional (vence)
+    //  quem tem a menor densidade populcional (vence)
     printf("Densidade populacional (menor vence): %s (%d)\n", carta1.densidade_popu < carta2.densidade_popu ?
          "carta 1 venceu" : "carta 2 venceu", 
         carta1.densidade_popu < carta2.densidade_popu ? 1 : 0);
