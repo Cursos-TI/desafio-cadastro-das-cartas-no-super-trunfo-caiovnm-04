@@ -134,7 +134,7 @@ int main()
          "carta 1 venceu" : "carta 2 venceu",
            carta1.PIB_percapita > carta2.PIB_percapita ? 1 : 0);
 
-    printf("Super Poder (maior vende): %s (%d)\n", carta1.super_poder > carta2.super_poder ?
+    printf("Super Poder (maior vence): %s (%d)\n", carta1.super_poder > carta2.super_poder ?
          "carta 1 venceu" : "carta 2 venceu",
         carta1.super_poder > carta2.super_poder ? 1 : 0);
 
