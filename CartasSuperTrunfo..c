@@ -111,17 +111,19 @@ int main()
     printf("Super Poder : %.2f\n", carta2.super_poder);
 
     // comparação das cartas
-   //==== COMPARAÇÃO DAS CARTAS (ATRIBUTO: PIB) ====
-    printf("\n==== Comparação por Atributo (PIB) ====\n");
-    printf("Carta 1 - %s (PIB: %.2f)\n", carta1.cidade, carta1.PIB);
-    printf("Carta 2 - %s (PIB: %.2f)\n", carta2.cidade, carta2.PIB);
+    printf("\n==== comparação do (poder Total) entre as duas cartas ====\n");
 
-    if (carta1.PIB > carta2.PIB) {
-        printf("Resultado: Carta 1 (%s) venceu!\n", carta1.cidade);
-    } else if (carta2.PIB > carta1.PIB) {
-        printf("Resultado: Carta 2 (%s) venceu!\n", carta2.cidade);
+    printf("\nComparação de cartas (Atributo: Super Poder Total)\n");
+    printf("Carta 1 - %s (Super Poder: %.2f)\n", carta1.cidade, carta1.super_poder);
+    printf("Carta 2 - %s (Super Poder: %.2f)\n", carta2.cidade, carta2.super_poder);
+
+      if (carta1.super_poder > carta2.super_poder) {
+        printf("Super Poder: Carta 1 venceu\n");
+    } else if (carta2.super_poder > carta1.super_poder) {
+        printf("Super Poder: Carta 2 venceu\n");
     } else {
-        printf("Resultado: Empate!\n");
+        printf("Super Poder: Empate!\n");
     }
+
     return 0;
 }
